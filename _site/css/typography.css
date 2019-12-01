@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
+
 html {
-    font: 18px/1.5 Verdana, sans-serif;
+    font: 18px/1.5 Helvetica, sans-serif;
 }
 
 body, form, input, textarea, option, select, button {
     font: inherit;
 }
 
-p, ul, ol {
+ul, ol {
     padding-bottom: 1.5em;
 }
 
@@ -51,3 +53,30 @@ blockquote p:last-child {
 blockquote p.author {
     text-align: right;
 }
+
+.branding h3 {
+    padding-top: 1.2em;
+}
+
+.branding p {
+    padding-top: 2em;
+}
+
+.branding p a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.page-titles {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.contact-form span {
+    color: white;
+}
+
+

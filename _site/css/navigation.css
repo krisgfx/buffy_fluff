@@ -1,26 +1,35 @@
-.nav {
-    text-align: right;
-    padding-top: 0.5em;
-}   
+.navigation {
+    padding: 0em;
+} 
 
-nav ul {
+.branding {
     display: flex;
 }
 
-.nav ul li {
-    display: block;
-    margin: 0 0.7em;
+.navigation ul {
+    padding-top: 1.2em;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.nav a {
+.navigation ul li {
     display: block;
-    padding: 0.5em 1em;
-    background: #EEE;
+    margin: 0em 1em;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.5em 1.5em;
     color: #333;
     text-decoration: none;
 }
 
-.nav a:hover {
-    background: #090;
+.navigation a:hover {
+    background: hotpink;
     color: #FFF;
+}
+
+.branding img {
+    width: 5em;
+    height: 5em;
 }

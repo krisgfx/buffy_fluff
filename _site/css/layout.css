@@ -3,3 +3,55 @@
     margin: 0 auto;
 }
 
+.site-header {
+    display:     flex;   
+}
+
+.site-main {
+}
+
+.navigation {
+    flex: 2;
+}
+
+.branding {
+    flex: 1;
+}
+
+.contacts-footer-subscribe {
+    background: url("/assets/header_cosmos-1920-720.jpg") center no-repeat;
+    width: 60em;
+    height: 18em;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header-homepage {
+    background: #FFD0FF;
+    background: -webkit-linear-gradient(top left, #FFD0FF, #01BEDA);
+    background: -moz-linear-gradient(top left, #FFD0FF, #01BEDA);
+    background: linear-gradient(to bottom right, #FFD0FF, #01BEDA); 
+    display: flex;
+}
+
+.header-homepage img {
+    max-width:30em;
+    max-height: 30em;
+    margin: 0 auto;
+    outline:4px solid pink;
+    outline-offset:-100px;
+    border:50px solid transparent;
+    border-width:150px 50px 50px 150px;
+    margin:-75px 0 0 -75px;
+}
+
+.site-footer {
+    background: #FFD0FF;
+    background: -webkit-linear-gradient(top left, #FFD0FF, #01BEDA);
+    background: -moz-linear-gradient(top left, #FFD0FF, #01BEDA);
+    background: linear-gradient(to bottom right, #FFD0FF, #01BEDA);  
+}
+
+
+
+

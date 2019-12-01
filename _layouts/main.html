@@ -11,12 +11,16 @@
     <div class="site">
         
         <header class="site-header">
-            <h1> <a href="/"> {{ site.title }} </a> </h1>
-            <p> {{ site.description }} </p>
+            <div class="branding">
+                <img src="/assets/buffy_head_logo.png">
+                <p> <a href="/"> {{ site.title }} </a> </p>
+            </div>
             
-            <nav class="nav">
+            <nav class="navigation">
                 <ul>
-                {% for page in site.pages %}
+                {% assign navigation_pages = site.pages | sort:"order" %}
+                    
+                {% for page in navigation_pages %}
                     {% if page.title %}
                     <li> <a href = "{{ page.url }}">{{  page.title }}</a> </li>
                     {% endif %}
