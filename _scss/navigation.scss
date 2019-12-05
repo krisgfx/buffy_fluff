@@ -25,7 +25,7 @@
 }
 
 .navigation a:hover {
-    background: hotpink;
+    background: var(--primary-color, hotpink);
     color: #FFF;
 }
 
