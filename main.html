@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {{ site.title }}  </title>
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body>
+    
+    <div class="site">
+        
+        <header class="site-header">
+            <div class="branding">
+                <img src="/assets/buffy_head_logo.png">
+                <p> <a href="/"> {{ site.title }} </a> </p>
+            </div>
+            
+            <nav class="navigation">
+                <ul>
+                {% assign navigation_pages = site.pages | sort:"order" %}
+                    
+                {% for page in navigation_pages %}
+                    {% if page.title %}
+                    <li> <a href = "{{ page.url }}">{{  page.title }}</a> </li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            </nav>
+        
+        </header>
+    
+    
+        <main class="site-main">
+            {{ content }}
+        </main>
+    
+        <footer class="site-footer">
+            <p> {{ site.title }} &copy; 2019 All rights reserved</p>
+        </footer>
+    
+    </div>
+</body>  
+</html>

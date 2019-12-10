@@ -1,11 +1,8 @@
 .space-home {
-    min-height: 50vh;
-    background-image: url(/assets/space_bg_smaller.jpg);
-    background-color: black;
-    background-size: cover;
+    min-height: 40vh;
+    background-color: var(--text-black-color, black);
     color: white;
     text-align: center;
-    border: 2px solid rgba(227, 243, 255, 0.3);
     border-radius: 5px;
 }
 
@@ -18,7 +15,7 @@
 
 .space-container {
     background-color: rgba(255,255,255,0.2);
-    min-width: 15em;
+    min-width: 16em;
     padding-bottom: 2em;
     margin: 1.5em;
     border-radius: 5px;
@@ -72,7 +69,7 @@
 }
 
 .quiz {
-    padding-bottom: 2em;
+    padding: 2em;
 }
 
 .quiz p {
@@ -83,15 +80,12 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.9em;
-    color: black;
-    background-color: azure;
+    color: var(--text-black-color, black);
+    background-color: var(--secondary-color);
     padding: (0.8em 1.5em);
     border-radius: 4px;
+    width: 7em;
 }
 
-.quiz-button:hover {
-    color: white;
-    background-color: black;
-    
-}
+
 

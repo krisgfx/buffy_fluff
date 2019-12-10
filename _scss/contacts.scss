@@ -3,6 +3,7 @@
     padding: 3em;
 }
 
+
 .contacts-all-wrapper iframe {
     width: 100%;
     display: block;
@@ -10,30 +11,27 @@
 }
 
 .contact-form {
-    display: flex;
+    color: white;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
     background-color: var(--primary-color, aquamarine);
+    width: 35vw;
+    border-radius: 0.3em;
+    padding: 2em;
 }
-
-.contact-form label {
-    width: 100%;
-    padding-bottom: 1em;
-    margin: 0 auto;
-}
-
 
 input[type=text],
 input[type=email],
+input[type=button],
 {
   max-width: 25em;
   padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
+  display: block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+    margin: 0 auto;
 }
 
 
