@@ -1,6 +1,6 @@
         <header class="site-header">
             <div class="branding">
-                <img src="/assets/buffy_head_logo.png">
+                <img src="{{ site.baseurl }}/assets/buffy_head_logo.png">
                 <p> <a href="/"> {{ site.title }} </a> </p>
             </div>
             
@@ -10,7 +10,7 @@
                     
                 {% for page in navigation_pages %}
                     {% if page.title %}
-                    <li> <a href = "{{ page.url }}">{{  page.title }}</a> </li>
+                    <li> <a href = "{{ site.baseurl }}{{ page.url }}">{{  page.title }}</a> </li>
                     {% endif %}
                 {% endfor %}
                 </ul>
