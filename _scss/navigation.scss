@@ -1,0 +1,39 @@
+.navigation {
+    padding: 0em;
+    flex: 2;
+} 
+
+.branding {
+    display: flex;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1em;
+}
+
+.navigation ul li {
+    display: block;
+    margin: 0.3em;
+}
+
+.navigation a {
+    display: block;
+    background-color: var(--primary-color, black);
+    padding: 0.4em 1.3em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    border-radius: 0.2em;
+}
+
+.navigation a:hover {
+    text-decoration: line-through;
+}
+
+.branding img {
+    width: 5em;
+    height: 5em;
+}
