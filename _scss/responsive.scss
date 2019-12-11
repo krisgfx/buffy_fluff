@@ -16,7 +16,7 @@ $breakpoints: (
     @if map-has-key($breakpoints, $breakpoint) {
         // Prints a media query based on the value
         @media #{inspect(map-get($breakpoints, $breakpoint))} {
-            @content;
+        @content;
         }
     }
 
