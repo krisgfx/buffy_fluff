@@ -7,6 +7,10 @@
 
 .navigation-mobile a svg {
     color: var(--primary-color, black);
+    
+     &:hover {
+    color: var(--secondary-color, black);
+    }
 }
 
  .navigation {
@@ -43,8 +47,10 @@
     letter-spacing: 0.1em;
     border-radius: 0.2em;
     
-    a:hover {
+    &:hover {
     text-decoration: line-through;
+    background-color: var(--secondary-color, green);
+    color: var(--black-text-color, black);
     }
 }
 

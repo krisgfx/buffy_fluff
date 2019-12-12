@@ -2,6 +2,7 @@
 <html land="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> {{ site.title }}  </title>
     <link rel="stylesheet" href="{{ site.baseurl }}/css/gallery.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
@@ -19,9 +20,7 @@
             {{ content }}
         </main>
     
-        <footer class="site-footer">
-            <p> {{ site.title }} &copy; 2019 All rights reserved</p>
-        </footer>
+        {% include footer.html %}
     
     </div>
 </body>  

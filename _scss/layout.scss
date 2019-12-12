@@ -4,33 +4,24 @@
     margin: 0 auto;
 }
 
+.site-main {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 .site-header {
     display: flex;   
 }
 
-.site-main {
-}
-
 .branding {
     flex: 1;
-    padding-left: 1em;
+    padding-left: 0em;
 }
 
-.header-about {
+.header-read {
     background-image: url(/assets/header_cosmos-1920-720.jpg);
     background-size: cover;
     min-height: 20em;
-}
-
-.header-homepage img {
-    width: 100%;
-    height: auto;  
-}
-
-.site-footer {
-    padding: 1em;
-    color: white;
-    background-color: var(--text-black-color, black);
 }
 
 .upper-home {
@@ -65,6 +56,7 @@
 .important-info {
     position: relative;
     padding: 1em;
+    background-color: var(--secondary-color, greenyellow)
 }
 
 .important-info p {
