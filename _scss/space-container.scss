@@ -20,12 +20,13 @@
     margin: 1.5em;
     border-radius: 5px;
     border: 2px solid transparent;
-}
-
-.space-container:hover {
-    background-color: rgba(255,255,255,0.1);
-    border: 2px solid rgba(255,255,255,0.6);
-    transition: background-color .3s linear, border .3s linear;
+    
+        &:hover {
+        background-color: rgba(255,255,255,0.1);
+        border: 2px solid rgba(255,255,255,0.6);
+        transition: background-color .3s linear, border .3s linear;
+            
+    }
 }
 
 .name {
@@ -59,13 +60,6 @@
     content: "\f005";
     font-size: 0.9em;
     padding-right: 0.3em;
-}
-
-.iconbox svg {
-    width: 2em;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 2em;
-    padding: 0.4em;
 }
 
 .quiz {

@@ -40,16 +40,22 @@
 
 .upper-text-home {
     flex: 3;
+    flex-shrink: 3;
     padding-left: 2em;
     padding-top: 1em;
+    
+    p {
+        font-size: 17px;
+    }
 }
 
 .upper-media-home {
     flex: 2;
+    
 }
 
 .upper-media-home-container {
-    background-image: url("https://p-sf1.pcloud.com/DLZgnkfuhZnnLt3hZFhjoZZ3iqIN7ZNVZZzs0ZXZdjRZh5ZZZDVvuqWJmcOydSjPJJ06LtfIuqRc7/th-17649865936-490x362.jpg");
+    background-image: url(/assets/poping_buffy_head_2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -75,4 +81,21 @@
     left: 1em;
     top: 0.5em;
 }
+
+@media only screen and (max-width: 900px) {
+    .upper-home {
+        display: block;
+    }
+    
+    .upper-text-home {
+        padding: 1em;
+    }
+    
+    .important-info p:before {
+    top: 0.8em;
+    }
+}
+
+
+
 
