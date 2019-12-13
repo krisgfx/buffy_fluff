@@ -1,43 +1,95 @@
+.articles-all {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 0.5em; 
+}
+
+
 .article-wrapper {
     position: relative;
-    background-color: ghostwhite;
     padding: 1em;
+    -webkit-box-shadow: 1px 0px 6px 4px rgba(0,0,0,0.56);
+    -moz-box-shadow: 1px 0px 6px 4px rgba(0,0,0,0.56);
+    box-shadow: 1px 0px 6px 4px rgba(0,0,0,0.56);
+    border-bottom: 2px solid grey;
+    overflow: hidden;
+    
+    a {
+        float: left;
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            padding: 1em;
+        }
+    }
 }
 
 .read-more-state {
-  display: none;
+    display: none;
 }
 
 .read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
 }
 
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
-  opacity: 1;
-  font-size: inherit;
+    opacity: 1;
+    font-size: inherit;
 }
 
 .read-more-state ~ .read-more-trigger:before {
-  content: 'read more';
+    content: 'read more';
 }
 
 .read-more-state:checked ~ .read-more-trigger:before {
-  content: 'read less';
+    content: 'read less';
 }
 
 .read-more-trigger {
-  cursor: pointer;
-  display: inline-block;
-  position: absolute;
-  padding: 0 .5em;
-  color: #666;
-  font-size: .9em;
-  line-height: 2;
-  border: 1px solid #ddd;
-  border-radius: .25em;
-  right: 1em;
-  bottom: 1em;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    padding: 0 .5em;
+    color: var(--secondary-color, green);
+    font-weight: 700;
+    right: 1em;
+    bottom: 1em;
 }
+
+.article-text-important {
+    font-size: 1.2em;
+    font-weight: 700;
+    display: block;
+}
+
+.article-source {
+    display: block;
+    padding-top: 1em;
+    
+    a {
+        text-decoration: none;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .articles-all {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+    .article-wrapper a {
+        float: none;
+    }
+}
+
+    
