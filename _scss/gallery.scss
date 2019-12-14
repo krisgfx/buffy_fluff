@@ -1,6 +1,7 @@
 .gallery {
+    padding: 0;
+    margin: 0;
     display: grid;
-    margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 1fr auto;
     grid-gap: 0.5em;
@@ -61,11 +62,43 @@
     transform: translate(-50%, -50%);
 }
 
+blockquote{
+    
+    padding: 1em;
+    padding-top: 3em;
+    
+    p {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 0em;
+    margin: 0em 7em 0em 7em;
+    opacity: 0;
+    border-bottom: 2px solid var(--secondary-color, green);
+    transition: opacity 0.4s ease-in;
+    transition-delay: 0.3s;
+    }
+    
+    footer {
+        text-align: center;
+        padding-top: 0.5em;
+        font-size: 0.9em;
+    }
+    
+}
+
+.loaded blockquote p {
+    opacity: 1;
+}
+
 @media only screen and (max-width: 900px) {
     .gallery {
         grid-template-columns: repeat(2, 2fr);
         grid-gap: 1em;
         grid-auto-flow: dense;
+    }
+    
+    blockquote p {
+        margin: 0em 4em 0em 4em;
     }
 }
 
@@ -79,5 +112,11 @@
             border-bottom: none;
         }
     
+    blockquote p {
+        margin: 0em 3em 0em 3em;
+    }
+    
 }
+
+
 

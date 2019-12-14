@@ -8,6 +8,11 @@
     <title> Buffy The Fluff  </title>
     <link rel="stylesheet" href="/buffy_fluff/css/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        window.addEventListener('load', (event) => {
+            document.querySelector('body').classList.add('loaded');
+        });
+    </script>
 </head>
     
 <body>
@@ -68,7 +73,12 @@
         
     
         <main class="site-main">
-            <ul class="gallery">
+            <blockquote>
+    <p>“The smallest feline is a masterpiece.”</p>
+    <footer>– Leonardo da Vinci</footer>
+</blockquote>
+
+<ul class="gallery">
     
     <li class="small-square">
         <a href="#">
@@ -178,5 +188,6 @@
 
     
     </div>
+    
 </body>  
 </html>

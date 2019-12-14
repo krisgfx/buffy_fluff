@@ -8,9 +8,9 @@
 
 .space-container-wrapper {
     display: flex;
+    align-items: center;
     flex-wrap: wrap; 
     justify-content: space-around;
-    align-items: center;
 }
 
 .space-container {
@@ -20,13 +20,27 @@
     margin: 1.5em;
     border-radius: 5px;
     border: 2px solid transparent;
+    transition: background-color .3s linear;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
     
         &:hover {
         background-color: rgba(255,255,255,0.1);
-        border: 2px solid rgba(255,255,255,0.6);
-        transition: background-color .3s linear, border .3s linear;
-            
+        border: 2px solid rgba(255,255,255,0.6);    
     }
+}
+
+.space-container:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.space-container:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+
+.loaded .space-container {
+    opacity: 1;
 }
 
 .name {
@@ -42,7 +56,9 @@
     font-size: 0.7em;
     font-weight: 400;
     letter-spacing: 0.1em;
-    padding: 0;
+    padding-top: 0.5em;
+    margin: 0 2em 0 2em;
+    border-top: 2px solid white;
 }
 
 .space-container ul {
@@ -57,7 +73,7 @@
 
 .reasons li:before {
     font-family: "FontAwesome";
-    content: "\f005";
+    content: "\f1b0";
     font-size: 0.9em;
     padding-right: 0.3em;
 }

@@ -1,3 +1,9 @@
+.header-read {
+    background-image: url("https://i.ibb.co/BrWFhBy/header-cosmos-1920-720.jpg");
+    background-size: cover;
+    min-height: 20em;
+}
+
 .articles-all {
     display: grid;
     margin: 0 auto;
@@ -35,7 +41,7 @@
     opacity: 0;
     max-height: 0;
     font-size: 0;
-    transition: .25s ease;
+    transition: .25s ease-in;
 }
 
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
@@ -74,6 +80,9 @@
     
     a {
         text-decoration: none;
+        color: var(--black-text-color, black);
+        border-bottom: 2px solid var(--secondary-color, black);
+        font-size: 0.8em;
     }
 }
 
@@ -89,6 +98,10 @@
   
     .article-wrapper a {
         float: none;
+    }
+    
+    .header-read {
+        min-height: 15em;
     }
 }
 
